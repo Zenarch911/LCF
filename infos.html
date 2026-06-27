@@ -8,16 +8,21 @@
       content="Informations et contact — Lorem Consulting France, cabinet de conseil web et applications."
     />
     <title>Infos — Lorem Consulting France</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/src/css/style.css" />
   </head>
-  <body data-page="infos" class="min-h-screen flex flex-col bg-lcf-light text-lcf-slate">
+  <body data-page="infos" class="min-h-screen flex flex-col bg-lcf-light text-lcf-text">
     <div id="site-header"></div>
 
     <main>
-      <section class="bg-white border-b border-slate-200">
+      <section class="bg-lcf-surface border-b border-lcf-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <h1 class="text-3xl sm:text-4xl font-bold text-lcf-navy">Informations</h1>
-          <p class="mt-4 text-lg text-slate-600 max-w-2xl">
+          <p class="eyebrow mb-3">À propos</p>
+          <h1 class="text-3xl sm:text-4xl font-bold text-lcf-navy tracking-tight">Informations</h1>
+          <p class="mt-4 text-lg text-lcf-slate max-w-2xl">
             Qui sommes-nous, comment nous joindre et comment nous travaillons.
           </p>
         </div>
@@ -39,7 +44,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card">
             <h2 class="text-xl font-bold text-lcf-navy">Contact</h2>
             <dl class="mt-4 space-y-3 text-sm">
               <div>
@@ -62,25 +67,25 @@
         </div>
       </section>
 
-      <section class="bg-white border-y border-slate-200">
+      <section class="bg-lcf-surface border-y border-lcf-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
           <h2 class="text-xl font-bold text-lcf-navy">Notre façon de travailler</h2>
           <ol class="mt-6 grid gap-6 sm:grid-cols-3">
-            <li class="rounded-xl border border-slate-200 p-5">
+            <li class="card">
               <span class="text-lcf-accent font-bold text-lg">1.</span>
               <h3 class="mt-2 font-semibold text-lcf-navy">Échange &amp; cadrage</h3>
               <p class="mt-2 text-sm text-slate-600">
                 Comprendre vos besoins, votre existant et vos contraintes techniques ou réglementaires.
               </p>
             </li>
-            <li class="rounded-xl border border-slate-200 p-5">
+            <li class="card">
               <span class="text-lcf-accent font-bold text-lg">2.</span>
               <h3 class="mt-2 font-semibold text-lcf-navy">Proposition &amp; plan d'action</h3>
               <p class="mt-2 text-sm text-slate-600">
                 Définir un périmètre clair, des livrables et un calendrier réaliste.
               </p>
             </li>
-            <li class="rounded-xl border border-slate-200 p-5">
+            <li class="card">
               <span class="text-lcf-accent font-bold text-lg">3.</span>
               <h3 class="mt-2 font-semibold text-lcf-navy">Réalisation &amp; suivi</h3>
               <p class="mt-2 text-sm text-slate-600">

@@ -8,16 +8,21 @@
       content="Services LCF : refonte web, conformité RGPD, audits de sécurité, monitoring, bases de données et applications sur mesure."
     />
     <title>Services — Lorem Consulting France</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/src/css/style.css" />
   </head>
-  <body data-page="services" class="min-h-screen flex flex-col bg-lcf-light text-lcf-slate">
+  <body data-page="services" class="min-h-screen flex flex-col bg-lcf-light text-lcf-text">
     <div id="site-header"></div>
 
     <main>
-      <section class="bg-white border-b border-slate-200">
+      <section class="bg-lcf-surface border-b border-lcf-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <h1 class="text-3xl sm:text-4xl font-bold text-lcf-navy">Nos missions</h1>
-          <p class="mt-4 text-lg text-slate-600 max-w-2xl">
+          <p class="eyebrow mb-3">Prestations</p>
+          <h1 class="text-3xl sm:text-4xl font-bold text-lcf-navy tracking-tight">Nos missions</h1>
+          <p class="mt-4 text-lg text-lcf-slate max-w-2xl">
             Un catalogue de prestations couvrant le web, la conformité réglementaire
             et le développement d'applications.
           </p>
@@ -31,7 +36,7 @@
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Refonte de sites existants</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Reprise de sites déjà en place (HTML, JS, TS, PHP, WordPress) pour en
@@ -40,7 +45,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Mise à jour / mise à niveau de sites existants</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Actualisation technique d'un site : mise à jour des dépendances, du CMS,
@@ -49,7 +54,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Migration de sites</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Changement d'hébergeur, de technologie ou de plateforme (ex : passage
@@ -58,7 +63,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Création complète de sites</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Conception et développement d'un site de A à Z : arborescence, design,
@@ -68,7 +73,7 @@
         </div>
       </section>
 
-      <section id="normalisations" class="bg-white border-y border-slate-200 scroll-mt-20">
+      <section id="normalisations" class="bg-lcf-surface border-y border-lcf-border scroll-mt-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
           <div class="flex items-center gap-3 mb-8">
             <span class="text-2xl" aria-hidden="true">📋</span>
@@ -76,7 +81,7 @@
           </div>
 
           <div class="grid gap-6 sm:grid-cols-2">
-            <article class="rounded-xl border border-slate-200 p-6">
+            <article class="card">
               <h3 class="font-semibold text-lcf-navy">Mise aux normes RGPD</h3>
               <p class="mt-2 text-sm text-slate-600 leading-relaxed">
                 Audit et mise en conformité d'un site ou d'une application avec le
@@ -86,7 +91,7 @@
               </p>
             </article>
 
-            <article class="rounded-xl border border-slate-200 p-6">
+            <article class="card">
               <h3 class="font-semibold text-lcf-navy">Audits de sécurité</h3>
               <p class="mt-2 text-sm text-slate-600 leading-relaxed">
                 Analyse des vulnérabilités d'un site ou d'une application (failles XSS,
@@ -105,7 +110,7 @@
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Mise en place de monitoring</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Installation d'outils de surveillance pour suivre la disponibilité, les
@@ -114,7 +119,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Mise en place de l'analyse de données</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Intégration d'outils ou de scripts permettant de collecter et d'analyser
@@ -122,7 +127,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Mise en place de l'exportation des données</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Développement de fonctionnalités permettant d'extraire les données d'une
@@ -130,7 +135,7 @@
             </p>
           </article>
 
-          <article class="bg-white rounded-xl border border-slate-200 p-6">
+          <article class="card-hover">
             <h3 class="font-semibold text-lcf-navy">Création de bases de données (SQL / NoSQL)</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
               Conception et mise en place de bases de données relationnelles (MySQL,
