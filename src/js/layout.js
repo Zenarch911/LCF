@@ -100,7 +100,11 @@ export function renderFooter() {
         </div>
         <div class="mt-10 pt-6 border-t border-white/10 text-xs text-lcf-muted/80 flex flex-col sm:flex-row sm:justify-between gap-2">
           <p>&copy; ${year} Lorem Consulting France. Tous droits réservés.</p>
-          <p>Mentions légales · Politique de confidentialité</p>
+          <p>
+            <a href="mentions-legales.html" class="hover:text-white transition-colors duration-200">Mentions légales</a>
+            ·
+            <a href="confidentialite.html" class="hover:text-white transition-colors duration-200">Politique de confidentialité</a>
+          </p>
         </div>
       </div>
     </footer>
