@@ -419,3 +419,67 @@ body {
 .section-heading {
   @apply flex items-center gap-3 mb-8;
 }
+
+/* ── Formulaire contact ── */
+.form-group {
+  @apply space-y-1.5;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-lcf-navy;
+}
+
+.form-input {
+  @apply w-full px-4 py-2.5 rounded-lg border border-lcf-border bg-lcf-surface text-sm text-lcf-text transition-colors duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-lcf-accent/30 focus:border-lcf-accent;
+}
+
+.form-input.input-invalid {
+  @apply border-red-400 focus:ring-red-200 focus:border-red-400;
+}
+
+.form-textarea {
+  @apply resize-y min-h-[120px];
+}
+
+.form-error {
+  @apply text-xs text-red-600;
+}
+
+.form-status {
+  @apply flex items-start gap-3 p-4 rounded-lg text-sm leading-relaxed;
+}
+
+.form-status-success {
+  @apply bg-emerald-50 text-emerald-800 border border-emerald-200;
+}
+
+.form-status-error {
+  @apply bg-red-50 text-red-800 border border-red-200;
+}
+
+.info-card {
+  @apply bg-lcf-surface rounded-xl border border-lcf-border p-6;
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Pages légales ── */
+.legal-content section {
+  @apply mt-10 first:mt-0;
+}
+
+.legal-content h2 {
+  @apply text-lg font-bold text-lcf-navy mb-3;
+}
+
+.legal-content p {
+  @apply text-sm text-lcf-slate leading-relaxed;
+}
+
+.legal-content ul {
+  @apply mt-3 space-y-2 text-sm text-lcf-slate list-disc pl-5 leading-relaxed;
+}
+
+.legal-content a {
+  @apply text-lcf-accent hover:text-lcf-accent-hover transition-colors;
+}
