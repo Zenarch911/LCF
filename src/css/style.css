@@ -253,3 +253,169 @@ body {
     transition: none;
   }
 }
+
+/* ── Icônes ── */
+.icon-box {
+  @apply inline-flex items-center justify-center w-10 h-10 rounded-lg bg-lcf-accent/10 text-lcf-accent shrink-0;
+}
+
+.icon-box svg {
+  @apply w-5 h-5;
+}
+
+.icon-box-lg {
+  @apply inline-flex items-center justify-center w-12 h-12 rounded-xl bg-lcf-accent/10 text-lcf-accent shrink-0;
+}
+
+.icon-box-lg svg {
+  @apply w-6 h-6;
+}
+
+/* ── Cards services ── */
+.card-service {
+  @apply bg-lcf-surface rounded-xl border border-lcf-border p-6 transition-all duration-300 relative overflow-hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.card-service::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.card-service:hover {
+  box-shadow: var(--shadow-card-hover);
+  @apply border-lcf-accent/30 -translate-y-0.5;
+}
+
+.card-service:hover::before {
+  background: var(--color-lcf-accent);
+}
+
+/* ── Navigation latérale Services ── */
+.services-layout {
+  @apply grid gap-10 lg:grid-cols-[220px_1fr] lg:gap-12 xl:gap-16;
+}
+
+.services-nav {
+  @apply hidden lg:block;
+}
+
+.services-nav-inner {
+  @apply sticky top-24 space-y-1;
+}
+
+.services-nav-link {
+  @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-lcf-slate transition-all duration-200 border-l-2 border-transparent;
+}
+
+.services-nav-link:hover {
+  @apply text-lcf-navy bg-lcf-light;
+}
+
+.services-nav-link.is-active {
+  @apply text-lcf-accent bg-lcf-accent/5 border-lcf-accent font-semibold;
+}
+
+.services-nav-link svg {
+  @apply w-5 h-5 shrink-0 opacity-70;
+}
+
+.services-nav-link.is-active svg {
+  @apply opacity-100;
+}
+
+.services-nav-mobile {
+  @apply lg:hidden flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0;
+  scrollbar-width: none;
+}
+
+.services-nav-mobile::-webkit-scrollbar {
+  display: none;
+}
+
+.services-nav-mobile .services-nav-link {
+  @apply shrink-0 border-l-0 border border-lcf-border bg-lcf-surface;
+}
+
+.services-nav-mobile .services-nav-link.is-active {
+  @apply border-lcf-accent bg-lcf-accent/5;
+}
+
+/* ── Pour qui ── */
+.audience-card {
+  @apply bg-lcf-surface rounded-xl border border-lcf-border p-8 transition-all duration-300 relative overflow-hidden text-center;
+  box-shadow: var(--shadow-card);
+}
+
+.audience-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.audience-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  @apply border-lcf-accent/30 -translate-y-0.5;
+}
+
+.audience-card:hover::before {
+  background: var(--color-lcf-accent);
+}
+
+.audience-card .icon-box-lg {
+  @apply mx-auto mb-4;
+}
+
+/* ── FAQ ── */
+.faq-list {
+  @apply space-y-3;
+}
+
+.faq-item {
+  @apply bg-lcf-surface rounded-xl border border-lcf-border overflow-hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.faq-item summary {
+  @apply flex items-center justify-between gap-4 px-6 py-4 cursor-pointer text-sm font-semibold text-lcf-navy list-none select-none transition-colors duration-200;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  @apply text-lcf-accent text-xl font-light leading-none shrink-0 transition-transform duration-200;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item summary:hover {
+  @apply bg-lcf-light/50;
+}
+
+.faq-item[open] summary {
+  @apply border-b border-lcf-border;
+}
+
+.faq-answer {
+  @apply px-6 py-4 text-sm text-lcf-slate leading-relaxed;
+}
+
+.section-heading {
+  @apply flex items-center gap-3 mb-8;
+}
