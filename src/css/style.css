@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lcf-navy: #0f172a;
+  --color-lcf-slate: #334155;
+  --color-lcf-accent: #2563eb;
+  --color-lcf-accent-hover: #1d4ed8;
+  --color-lcf-light: #f8fafc;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
