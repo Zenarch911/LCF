@@ -651,3 +651,35 @@ body.nav-open {
     opacity: 0;
   }
 }
+
+/* ── Bannière cookies ── */
+.cookie-banner {
+  @apply fixed bottom-0 inset-x-0 z-[80] p-4 sm:p-6 translate-y-full opacity-0 transition-all duration-300;
+}
+
+.cookie-banner.is-visible {
+  @apply translate-y-0 opacity-100;
+}
+
+.cookie-banner-inner {
+  @apply max-w-4xl mx-auto flex flex-col sm:flex-row sm:items-center gap-4 p-5 sm:p-6 rounded-2xl border border-lcf-border bg-lcf-surface shadow-lg;
+  box-shadow: var(--shadow-card-hover);
+}
+
+.cookie-banner-text {
+  @apply text-sm text-lcf-slate leading-relaxed flex-1;
+}
+
+.cookie-banner-text a {
+  @apply text-lcf-accent hover:text-lcf-accent-hover font-medium transition-colors;
+}
+
+.cookie-banner-actions {
+  @apply flex flex-wrap gap-2 shrink-0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookie-banner {
+    transition: none;
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Lorem Consulting France">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1222"/>
+      <stop offset="50%" stop-color="#0f2847"/>
+      <stop offset="100%" stop-color="#0c3544"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#0891b2" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="120" cy="120" r="48" fill="#0891b2" opacity="0.9"/>
+  <text x="120" y="132" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="28" font-weight="700">LCF</text>
+  <text x="200" y="118" fill="#f1f5f9" font-family="system-ui,sans-serif" font-size="42" font-weight="700">Lorem Consulting France</text>
+  <text x="200" y="162" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="24">Web · Conformité · Applications</text>
+  <text x="120" y="340" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="36" font-weight="600">Votre partenaire web, conformité</text>
+  <text x="120" y="390" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="36" font-weight="600">et applications sur mesure</text>
+  <rect x="120" y="440" width="220" height="8" rx="4" fill="#0891b2"/>
+</svg>

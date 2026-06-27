@@ -1,10 +1,15 @@
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
+import { compression } from "vite-plugin-compression2";
 import { resolve } from "path";
 
 export default defineConfig({
-  plugins: [tailwindcss()],
+  plugins: [
+    tailwindcss(),
+    compression({ algorithms: ["gzip", "brotliCompress"], exclude: [/\.(br|gz)$/] }),
+  ],
   build: {
+    cssMinify: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),

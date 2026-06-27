@@ -4,6 +4,7 @@ import { initServicesNav } from "./services-nav.js";
 import { initContactForm } from "./contact.js";
 import { initTheme } from "./theme.js";
 import { initPageTransitions } from "./transitions.js";
+import { initCookieBanner } from "./cookies.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const page = document.body.dataset.page;
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initPageTransitions();
   initScrollReveal();
+  initCookieBanner();
   if (page === "services") initServicesNav();
   if (page === "infos") initContactForm();
 });
