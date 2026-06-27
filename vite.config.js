@@ -12,6 +12,7 @@ export default defineConfig({
         infos: resolve(__dirname, "infos.html"),
         mentions: resolve(__dirname, "mentions-legales.html"),
         confidentialite: resolve(__dirname, "confidentialite.html"),
+        notFound: resolve(__dirname, "404.html"),
       },
     },
   },
